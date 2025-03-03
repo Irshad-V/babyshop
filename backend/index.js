@@ -15,7 +15,14 @@ app.use(cors({
     credentials: true
 }))
 
-
+app.get("/", (req, res) => {
+    res.json({
+        status: "OK",
+        success: true,
+        data: {},
+        time: new Date().toTimeString()
+      })
+  })
 app.use("/api", router)
  
 const PORT = 8080 || process.env.PORT
