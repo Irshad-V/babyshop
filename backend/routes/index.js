@@ -1,6 +1,6 @@
 
 const express = require('express')
-const userSignUp = require('../controller/user/userSignup')
+const userSignUp = require('../controller/user/userSignUp')
 const userSignIn = require('../controller/user/userSignin')
 const userDetails = require('../controller/user/userDeatails')
 const authToken = require('../middleware/authToken')
